@@ -1,0 +1,377 @@
+html{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(42, 83, 83);  
+    background-image: url(img/ash-edmonds-0aWZdK8nK2I-unsplash.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.MotherFlexContainer{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(228, 228, 212, 0.904);
+    
+}
+
+
+
+body{
+    width: 90%;
+    margin:5% 5% 5% 5%;
+   
+}
+header{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(243, 239, 239, 0.726);
+    width: 90%;
+    margin:2% 5% 5% 5%;
+}
+
+header:first-child{
+    padding: 5% 5% 5% 5%;
+}
+
+header ul{
+    background-color: rgb(217, 217, 223);
+}
+
+header ul li{
+    display: inline-block;
+}
+
+header ul li a{
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    font-size: 100%;
+    margin:5px;
+    border: none; text-decoration: none;
+}
+
+header ul li a:hover{
+    background-color: white;
+    color: black;
+    transition-delay: 0;
+    transition-duration: 1s;
+}
+
+header img{display: none;}
+
+.active{
+    background-color: white;
+    color: rgb(14, 12, 12);
+}
+
+/* Here I put some code for dropdown menu */
+
+
+.dropbtn {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    font-size: 100%;
+    margin:5px;
+    border: none;
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+}
+  
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdown-content a:hover {
+    background-color: white;
+    color:black;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+    transition-delay: 1s;
+}
+  
+.dropdown:hover .dropbtn {
+    background-color: white;
+    color:black;
+    transition-delay: 0;
+    transition-duration: 1s;
+}
+
+.dropdown-content .active{
+    background-color: white;
+    color: rgb(14, 12, 12);
+}
+
+main{
+    margin-top: 5%;
+    padding: 2.5% 5% 5% 5%;
+}
+
+main section ul{
+    list-style-type: none;
+}
+
+main section ul a{
+    display: inline-block;
+    width: fit-content;
+    /* padding: 2%; */
+    text-decoration: none;
+    color: black;border-radius: 80%;
+}
+
+main section ul li:hover{
+    border-radius: 5%;
+    background-color: gray;
+    list-style-type:disc;
+    transition-duration: 1s;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    padding: 5% 5% 5% 5%;
+    background-color: rgba(170, 153, 153, 0.938);
+}
+
+
+footer a{
+    text-decoration: none;
+    color: black;
+}
+
+footer i{
+    display: inline-block;
+    padding:2%;
+    margin-right: 2%;
+    border-radius: 80%;
+}
+
+footer i:hover{
+    background-color: rgb(107, 96, 96);
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+    margin: 0;
+    width: 100%;
+    position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+#mySlidesTheFirst{
+    display: block;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* Here I put some code for styling the website for screens bigger than 500px */
+
+@media all and (min-width:520px) {
+
+    .MotherFlexContainer{
+        flex-direction: row;
+    }
+
+    header{
+        flex-direction: column;
+        flex-basis: 30%;
+    }
+
+    main{
+        flex-basis: 70%;
+    }
+
+    header ul {
+        background-color: rgba(170, 153, 153, 0.288);
+    }
+
+    header ul li{
+        display: block;
+    }
+
+    .slideshow-container{
+        margin:50% 0% 20% 0;
+        width: 100%;
+    }
+
+    footer{
+        display: block;
+    }
+
+}
+
+/* Here I put the code related to styling the website for the size bigger than 720px */
+
+@media all and (min-width:720px){
+
+    /* html{
+        background-image: linear-gradient(to right,rgb(14, 13, 13),rgb(88, 84, 84));
+    } */
+
+    .MotherFlexContainer{
+        flex-direction: column;
+    }
+
+    header{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0;padding-bottom: 0;
+        height: auto;
+        flex-basis: 1;
+        flex-basis: 30%;
+    }
+
+    header ul{
+        padding-top: 0;margin-top: 0;
+    }
+
+    header .flex-item{
+        flex-basis: 50%;
+    }
+
+    header img{
+        display: inline-block;
+        width:10%;
+        margin-right: 2%;
+        border-radius: 100%;
+        float: left;
+
+    }
+
+    main{
+        flex-grow: 2;
+        flex-basis: 70%;
+        margin-top:0;padding-top: 0;
+        /* background-image: url("img/sightsignal-fastdatanetworkloop1_IMG.jpg");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover; */
+    }
+
+    .slideshow-container{
+        margin:10% 10% 20% 10%;
+        width: 80%;
+    }
+
+    header ul {
+        background-color: rgba(170, 153, 153, 0.288);
+        float: right;
+    }
+
+    header ul li{
+        display: block;
+    }
+
+    footer{
+        position: sticky;
+        display:flex;
+        flex-direction: row;
+    }
+
+    footer div{
+        display: flex;
+        flex-direction: row;
+        flex-basis:50%;
+    }
+
+
+    footer div i{
+        display: inline-block;
+    }
+
+}
