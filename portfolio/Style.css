@@ -60,8 +60,8 @@ header ul li a:hover{
 header img{display: none;}
 
 .active{
-    background-color: white;
-    color: rgb(14, 12, 12);
+    background-color: #f9f9f9;
+    color: rgb(0, 0, 0);
 }
 
 /* Here I put some code for dropdown menu */
@@ -244,7 +244,7 @@ footer i:hover{
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.dot:hover {
   background-color: #717171;
 }
 
@@ -257,6 +257,11 @@ footer i:hover{
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+.active{
+    background-color: white;
+    color: rgb(14, 12, 12);
 }
 
 /* Here I put some code for styling the website for screens bigger than 500px */
@@ -292,12 +297,6 @@ footer i:hover{
     footer{
         display: block;
     }
-
-    .active{
-        background-color: white;
-        color: rgb(14, 12, 12);
-    }
-    
 
 }
 
@@ -380,9 +379,6 @@ footer i:hover{
         display: inline-block;
     }
 
-    .active{
-        background-color: white;
-        color: rgb(14, 12, 12);
-    }
+
     
 }
