@@ -293,6 +293,12 @@ footer i:hover{
         display: block;
     }
 
+    .active{
+        background-color: white;
+        color: rgb(14, 12, 12);
+    }
+    
+
 }
 
 /* Here I put the code related to styling the website for the size bigger than 720px */
@@ -374,4 +380,9 @@ footer i:hover{
         display: inline-block;
     }
 
+    .active{
+        background-color: white;
+        color: rgb(14, 12, 12);
+    }
+    
 }
