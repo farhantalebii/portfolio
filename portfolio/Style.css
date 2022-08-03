@@ -22,17 +22,33 @@ body{
 }
 header{
     display: flex;
-    flex-direction: column;
-    background-color: rgba(243, 239, 239, 0.726);
+    /* flex-direction: column; */
+    background-color: rgb(175, 175, 169);    
     width: 90%;
     margin:2% 5% 5% 5%;
+    transition: .5s;
+    animation: fadeInAnimation ease-in-out .5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
 }
 
 header:first-child{
+    flex-basis: 50%;
     padding: 5% 5% 5% 5%;
 }
 
 header ul{
+    flex-basis: 20%;
     background-color: rgb(217, 217, 223);
 }
 
@@ -57,7 +73,7 @@ header ul li a:hover{
     transition-duration: 1s;
 }
 
-header img{display: none;}
+
 
 .active{
     background-color: #f9f9f9;
@@ -121,7 +137,11 @@ header img{display: none;}
 main{
     margin-top: 5%;
     padding: 2.5% 5% 5% 5%;
+    animation: fadeInAnimation ease-in-out 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
+
 
 main section ul{
     list-style-type: none;
@@ -148,6 +168,9 @@ footer{
     margin-top: 5%;
     padding: 5% 5% 5% 5%;
     background-color: rgba(170, 153, 153, 0.938);
+    animation: fadeInAnimation ease-in-out 3.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 
@@ -161,10 +184,12 @@ footer i{
     padding:2%;
     margin-right: 2%;
     border-radius: 80%;
+    transition: 200ms;
 }
 
-footer i:hover{
-    background-color: rgb(107, 96, 96);
+footer i:hover, footer a:hover{
+    /* background-color: rgb(107, 96, 96); */
+    color: beige;
 }
 
 * {box-sizing:border-box}
@@ -214,9 +239,11 @@ footer i:hover{
 
 /* Caption text */
 .text {
-  color: #f2f2f2;
+  background-color: #10505552;
+  color: #131010;
   font-size: 15px;
   padding: 8px 12px;
+  margin:20px 0 0 0;
   position: absolute;
   bottom: 8px;
   width: 100%;
@@ -225,7 +252,7 @@ footer i:hover{
 
 /* Number text (1/3 etc) */
 .numbertext {
-  color: #f2f2f2;
+  color: #131010;
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
@@ -319,7 +346,13 @@ footer i:hover{
         height: auto;
         flex-basis: 1;
         flex-basis: 30%;
+        transition: 500ms ease-in-out;
     }
+
+    header:hover{
+        background-color: rgba(243, 239, 239, 0.726);
+    }
+
 
     header ul{
         padding-top: 0;margin-top: 0;
